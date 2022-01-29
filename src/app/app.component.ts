@@ -9,8 +9,9 @@ import { manageUsersService } from './manageUsers.service';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private manageUsers: manageUsersService){
 
+  constructor(private manageUsers: manageUsersService){
+    
   }
 
   activeUsers: string[]=[];

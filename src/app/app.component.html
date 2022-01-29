@@ -7,8 +7,10 @@
 </div>
 <div class="row" [ngStyle] = "{color:'green'}">
   <app-active-users [activeUsers] = "activeUsers">
-    List of Active Users
+    <div *ngIf="1 > 0;then valid else notvalid"></div>
   </app-active-users>
+  <ng-template #valid>List of Active Users</ng-template>
+  <ng-template #notvalid>No Active users</ng-template>
 </div>
 <hr>
 <div class="row" [ngStyle] = "{color:'red'}">
