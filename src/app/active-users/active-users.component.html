@@ -1,0 +1,14 @@
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="h4">Active Users</div>
+        <ng-content [ngStyle]="{color:'black'}"></ng-content>
+        <div class="col-md-5">
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let user of activeUsers; let i = index">
+                    {{user}} -- <a href="#" (click)="onActiveUserClicked(i)">Click To make Inactive</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
